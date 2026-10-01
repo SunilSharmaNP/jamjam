@@ -137,7 +137,7 @@ export const Footer: React.FC = () => {
 
           <div className="flex items-center gap-3 sm:gap-4 flex-wrap">
             <span className="flex items-center gap-1 text-stone-400">
-              Made with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 inline" /> for Kaliganj Foodies
+              Made By <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 inline" /> Sunil Sharma
             </span>
             <span className="text-stone-700">|</span>
             <button
