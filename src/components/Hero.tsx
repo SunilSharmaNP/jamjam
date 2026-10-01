@@ -25,7 +25,7 @@ export const Hero: React.FC = () => {
             Welcome to Kaliganj's Own
           </h2>
           <h1 className="text-3xl sm:text-5xl lg:text-6xl font-black tracking-tight text-white font-heading">
-            zȧm zȧm <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500">HOTEL</span>
+            ZAM ZAM <span className="text-transparent bg-clip-text bg-gradient-to-r from-amber-400 via-amber-300 to-yellow-500">HOTEL</span>
           </h1>
           <p className="text-lg sm:text-2xl font-bold text-amber-400 font-heading">
             {hotelInfo.tagline}
