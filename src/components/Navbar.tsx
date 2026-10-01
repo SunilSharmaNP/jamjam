@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react';
-import { Phone, MessageSquare, ShoppingBag, Menu, X, Shield, Clock, MapPin, Sparkles, FolderArchive, Download } from 'lucide-react';
+import { Phone, MessageSquare, ShoppingBag, Menu, X, Shield, Clock, MapPin, Sparkles } from 'lucide-react';
 import { useRestaurant } from '../context/RestaurantContext';
 
 export const Navbar: React.FC = () => {
-  const { hotelInfo, cartCount, setIsCartOpen, setIsAdminOpen, setIsDownloadModalOpen } = useRestaurant();
+  const { hotelInfo, cartCount, setIsCartOpen, setIsAdminOpen } = useRestaurant();
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
@@ -45,13 +45,6 @@ export const Navbar: React.FC = () => {
             <span className="flex items-center gap-1.5 text-stone-400">
               <Clock className="w-3.5 h-3.5 text-amber-400" /> {hotelInfo.openingTime} – {hotelInfo.closingTime}
             </span>
-            <button
-              onClick={() => setIsDownloadModalOpen(true)}
-              className="text-amber-400 hover:text-amber-300 font-bold transition-colors flex items-center gap-1 cursor-pointer bg-amber-500/10 border border-amber-500/30 px-2.5 py-0.5 rounded-lg text-[10px]"
-              title="Download Complete Source Code ZIP"
-            >
-              <Download className="w-3 h-3" /> Download Code (ZIP)
-            </button>
             <button
               onClick={() => setIsAdminOpen(true)}
               className="text-stone-400 hover:text-amber-400 transition-colors flex items-center gap-1 cursor-pointer"
@@ -212,17 +205,6 @@ export const Navbar: React.FC = () => {
             </div>
 
             <div className="border-t border-stone-900 pt-3 flex flex-col gap-2 text-xs text-stone-400 px-2">
-              <button
-                onClick={() => {
-                  setIsMobileMenuOpen(false);
-                  setIsDownloadModalOpen(true);
-                }}
-                className="w-full bg-amber-500/10 border border-amber-500/30 text-amber-400 hover:bg-amber-500/20 font-bold py-2 px-3 rounded-xl flex items-center justify-center gap-2 cursor-pointer"
-              >
-                <Download className="w-4 h-4" />
-                <span>Download Source Code (.ZIP)</span>
-              </button>
-
               <div className="flex items-center justify-between pt-1">
                 <span>Director: {hotelInfo.director}</span>
                 <button
