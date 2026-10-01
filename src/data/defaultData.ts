@@ -256,7 +256,7 @@ export const DEFAULT_REVIEWS: CustomerReview[] = [
     name: 'Arif Ansari',
     location: 'Manihari',
     rating: 5,
-    comment: 'Whenever we travel through Manihari or Kaliganj, stopping at zȧm zȧm HOTEL is compulsory. Mohammad Wasim Bhai ensures fresh hot food and top hygiene. 10/10 recommendation!',
+    comment: 'Whenever we travel through Manihari or Kaliganj, stopping at zȧm zȧm HOTEL is compulsory. Mohammad Waseem Bhai ensures fresh hot food and top hygiene. 10/10 recommendation!',
     date: '1 week ago',
     favoriteDish: 'Tandoori Chicken',
     isVerified: true
