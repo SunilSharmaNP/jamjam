@@ -255,7 +255,7 @@ export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     const formattedPhone = rawPhone.length === 10 ? `91${rawPhone}` : rawPhone;
 
     if (cart.length === 0) {
-      const fallbackMsg = `Hello zȧm zȧm HOTEL Kaliganj! I would like to place a food order. Please share today's menu and availability.`;
+      const fallbackMsg = `Hello ZAM ZAM HOTEL Kaliganj! I would like to place a food order. Please share today's menu and availability.`;
       return `https://wa.me/${formattedPhone}?text=${encodeURIComponent(fallbackMsg)}`;
     }
 
@@ -279,7 +279,7 @@ export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({ ch
     const rawPhone = hotelInfo.whatsapp.replace(/\D/g, '') || '9631343645';
     const formattedPhone = rawPhone.length === 10 ? `91${rawPhone}` : rawPhone;
     const price = portion === 'half' && item.halfPrice ? item.halfPrice : item.price;
-    const msg = `Hello zȧm zȧm HOTEL Kaliganj!\nI want to order:\n- *${item.name}* (${portion.toUpperCase()})\n- Price: ₹${price}\n\nPlease confirm availability and preparation time. Thank you!`;
+    const msg = `Hello Zam Zam HOTEL Kaliganj!\nI want to order:\n- *${item.name}* (${portion.toUpperCase()})\n- Price: ₹${price}\n\nPlease confirm availability and preparation time. Thank you!`;
     return `https://wa.me/${formattedPhone}?text=${encodeURIComponent(msg)}`;
   };
 
