@@ -1,9 +1,9 @@
 import React from 'react';
-import { Phone, MessageSquare, MapPin, Shield, Heart, Download } from 'lucide-react';
+import { Phone, MessageSquare, MapPin, Shield, Heart } from 'lucide-react';
 import { useRestaurant } from '../context/RestaurantContext';
 
 export const Footer: React.FC = () => {
-  const { hotelInfo, setIsAdminOpen, setIsDownloadModalOpen } = useRestaurant();
+  const { hotelInfo, setIsAdminOpen } = useRestaurant();
 
   return (
     <footer className="bg-stone-950 text-stone-300 border-t border-stone-800/80 pt-16 pb-28 md:pb-16">
@@ -139,15 +139,6 @@ export const Footer: React.FC = () => {
             <span className="flex items-center gap-1 text-stone-400">
               Made with <Heart className="w-3.5 h-3.5 text-red-500 fill-red-500 inline" /> for Kaliganj Foodies
             </span>
-            <span className="text-stone-700 hidden sm:inline">|</span>
-            <button
-              onClick={() => setIsDownloadModalOpen(true)}
-              className="text-amber-400 hover:text-amber-300 font-bold flex items-center gap-1.5 transition-colors cursor-pointer"
-              title="Download source code zip for Vercel"
-            >
-              <Download className="w-3.5 h-3.5" />
-              <span>Download Code (.ZIP)</span>
-            </button>
             <span className="text-stone-700">|</span>
             <button
               onClick={() => setIsAdminOpen(true)}
