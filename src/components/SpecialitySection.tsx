@@ -36,7 +36,7 @@ export const SpecialitySection: React.FC = () => {
     {
       icon: <PhoneCall className="w-6 h-6 text-emerald-400" />,
       title: 'Instant Call & WhatsApp Order',
-      desc: 'Direct contact with Mohammad Wasim and team for rapid orders without waiting.'
+      desc: 'Direct contact with Mohammad Waseem and team for rapid orders without waiting.'
     }
   ];
 
