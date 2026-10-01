@@ -2,7 +2,7 @@
 
 Official modern web application for **zȧm zȧm HOTEL** located in Kaliganj, Katihar, Bihar.
 
-- **Director**: Mohammad Wasim
+- **Director**: Mohammad Waseem
 - **Mobile / WhatsApp**: 
 - **Address**: Village – Kaliganj, P.O. – Mahuar, P.S. – Manihari, District – Katihar, Bihar – 854116
 - **Tagline**: Hot & Fresh • Delicious • Generous Quantity
