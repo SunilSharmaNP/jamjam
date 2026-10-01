@@ -45,7 +45,7 @@ export const ContactSection: React.FC = () => {
             Contact & Orders
           </h2>
           <p className="text-stone-400 text-sm sm:text-base mt-2">
-            Get in touch with Director Mohammad Wasim and team for table reservations, parcel takeaway, and catering orders.
+            Get in touch with Director Mohammad Waseem and team for table reservations, parcel takeaway, and catering orders.
           </p>
         </div>
 
