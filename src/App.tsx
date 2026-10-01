@@ -15,11 +15,8 @@ import { Footer } from './components/Footer';
 import { MobileStickyBar } from './components/MobileStickyBar';
 import { CartDrawer } from './components/CartDrawer';
 import { AdminModal } from './components/AdminModal';
-import { DownloadModal } from './components/DownloadModal';
 
 function AppContent() {
-  const { isDownloadModalOpen, setIsDownloadModalOpen } = useRestaurant();
-
   return (
     <div className="min-h-screen bg-stone-950 text-stone-100 flex flex-col font-sans selection:bg-amber-500 selection:text-stone-950">
       
@@ -46,10 +43,6 @@ function AppContent() {
       {/* Floating Modals and Drawers */}
       <CartDrawer />
       <AdminModal />
-      <DownloadModal
-        isOpen={isDownloadModalOpen}
-        onClose={() => setIsDownloadModalOpen(false)}
-      />
 
       {/* Sticky Call Now & WhatsApp bar for Mobile */}
       <MobileStickyBar />
