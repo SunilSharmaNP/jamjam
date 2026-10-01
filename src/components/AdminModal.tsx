@@ -298,7 +298,7 @@ export const AdminModal: React.FC = () => {
             </div>
             <div>
               <div className="flex items-center gap-2">
-                <h3 className="font-bold text-white text-base sm:text-lg">zȧm zȧm HOTEL – Admin Panel</h3>
+                <h3 className="font-bold text-white text-base sm:text-lg">ZAM ZAM HOTEL – Admin Panel</h3>
                 <span className="text-[10px] bg-amber-500/20 text-amber-400 font-bold px-2 py-0.5 rounded-full">
                   Live Editor
                 </span>
