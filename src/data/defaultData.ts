@@ -4,7 +4,7 @@ export const DEFAULT_HOTEL_INFO: HotelInfo = {
   name: 'zȧm zȧm HOTEL',
   tagline: 'Hot & Fresh • Delicious • Generous Quantity',
   subTagline: 'Visit once, love the taste, return always ❤️',
-  director: 'Mohammad Wasim',
+  director: 'Mohammad Waseem',
   phone: '9631343645',
   whatsapp: '9631343645',
   email: 'zamzamhotelkaliganj@gmail.com',
