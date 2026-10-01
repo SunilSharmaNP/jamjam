@@ -36,8 +36,6 @@ interface RestaurantContextType {
   setIsAdminOpen: (open: boolean) => void;
   isReviewModalOpen: boolean;
   setIsReviewModalOpen: (open: boolean) => void;
-  isDownloadModalOpen: boolean;
-  setIsDownloadModalOpen: (open: boolean) => void;
   resetToDefaults: () => void;
   getWhatsAppOrderUrl: (details?: { name?: string; address?: string; orderType?: string; notes?: string }) => string;
   getSingleItemWhatsAppUrl: (item: MenuItem, portion?: 'half' | 'full') => string;
@@ -84,7 +82,6 @@ export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({ ch
   const [isCartOpen, setIsCartOpen] = useState(false);
   const [isAdminOpen, setIsAdminOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
-  const [isDownloadModalOpen, setIsDownloadModalOpen] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('zamzam_hotel_info', JSON.stringify(hotelInfo));
@@ -322,8 +319,6 @@ export const RestaurantProvider: React.FC<{ children: React.ReactNode }> = ({ ch
         setIsAdminOpen,
         isReviewModalOpen,
         setIsReviewModalOpen,
-        isDownloadModalOpen,
-        setIsDownloadModalOpen,
         resetToDefaults,
         getWhatsAppOrderUrl,
         getSingleItemWhatsAppUrl
