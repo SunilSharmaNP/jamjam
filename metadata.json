@@ -1,0 +1,6 @@
+{
+  "name": "zȧm zȧm HOTEL – Kaliganj",
+  "description": "Official website for zȧm zȧm HOTEL in Kaliganj, Katihar, Bihar. Famous for authentic Chicken Biryani, Crispy Chicken Fry, Chicken Rice, Chicken Kebab and Tandoori.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
