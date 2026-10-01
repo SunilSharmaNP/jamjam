@@ -20,11 +20,11 @@ export const AboutSection: React.FC = () => {
             </div>
 
             <h2 className="text-3xl sm:text-4xl lg:text-5xl font-black text-white font-heading leading-tight">
-              About <span className="text-amber-400 font-brand">zȧm zȧm HOTEL</span>
+              About <span className="text-amber-400 font-brand">ZamZam HOTEL</span>
             </h2>
 
             <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
-              zȧm zȧm HOTEL is proud to be Kaliganj's trusted culinary landmark. We set out with a simple promise: to serve honest, flavorful, and freshly prepared chicken delicacies made with generous portions and warm hospitality.
+              Zam Zam HOTEL is proud to be Kaliganj's trusted culinary landmark. We set out with a simple promise: to serve honest, flavorful, and freshly prepared chicken delicacies made with generous portions and warm hospitality.
             </p>
 
             <p className="text-stone-300 text-sm sm:text-base leading-relaxed">
@@ -82,7 +82,7 @@ export const AboutSection: React.FC = () => {
                   <h3 className="text-2xl font-black text-white font-heading">
                     {hotelInfo.director}
                   </h3>
-                  <p className="text-xs text-stone-400">Director, zȧm zȧm HOTEL</p>
+                  <p className="text-xs text-stone-400">Director, Zam Zam HOTEL</p>
                 </div>
               </div>
 
