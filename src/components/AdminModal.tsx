@@ -37,7 +37,7 @@ export const AdminModal: React.FC = () => {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [pinInput, setPinInput] = useState('');
   const [pinError, setPinError] = useState(false);
-  const DEFAULT_PIN = '1234';
+  const DEFAULT_PIN = '1885';
 
   // Active Admin Tab
   const [activeTab, setActiveTab] = useState<'orders' | 'menu' | 'offers' | 'hotel' | 'gallery' | 'reviews'>('orders');
@@ -336,7 +336,6 @@ export const AdminModal: React.FC = () => {
               <p className="text-xs text-stone-400">
                 Enter your security PIN to edit items, prices, photos, and offers.
               </p>
-              <p className="text-[11px] text-amber-400 font-semibold mt-1">Default PIN: 1234</p>
             </div>
 
             <form onSubmit={handleLogin} className="space-y-4">
@@ -345,7 +344,7 @@ export const AdminModal: React.FC = () => {
                   type="password"
                   autoFocus
                   maxLength={10}
-                  placeholder="Enter PIN (1234)"
+                  placeholder="Enter PIN"
                   value={pinInput}
                   onChange={(e) => setPinInput(e.target.value)}
                   className="w-full text-center tracking-widest text-lg bg-stone-900 border border-stone-800 rounded-xl px-4 py-3 text-white focus:outline-none focus:border-amber-400"
