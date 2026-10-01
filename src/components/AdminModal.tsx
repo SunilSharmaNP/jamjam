@@ -30,7 +30,6 @@ export const AdminModal: React.FC = () => {
     orders,
     updateOrderStatus,
     deleteOrder,
-    setIsDownloadModalOpen,
     resetToDefaults
   } = useRestaurant();
 
@@ -438,15 +437,6 @@ export const AdminModal: React.FC = () => {
               </button>
 
               <div className="mt-auto pt-4 border-t border-stone-800 hidden md:block space-y-2">
-                <button
-                  type="button"
-                  onClick={() => setIsDownloadModalOpen(true)}
-                  className="w-full bg-emerald-600 hover:bg-emerald-500 text-white font-bold flex items-center justify-center gap-2 text-xs py-2.5 px-3 rounded-xl transition-colors cursor-pointer shadow-md"
-                >
-                  <Download className="w-4 h-4" />
-                  <span>Download ZIP (Vercel)</span>
-                </button>
-
                 <button
                   onClick={() => {
                     if (confirm('Reset all items, prices, offers, and settings to original defaults?')) {
